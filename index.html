@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <form action="#">
+        <h1>Анкета ученика</h1>
+            <fieldset>
+                <legend>Контактная информация</legend>
+                    <input type="text" placeholder="Введите имя">
+                    <input type="number" placeholder="Введите номер">
+                    <input type="email" placeholder="Введите email">
+            </fieldset>
+            <fieldset>
+                <legend>Личная информация</legend>
+                    <label for="age">Ваш возраст</label>
+                        <input id="age" type="number">
+                    <label for="date">Дата рождения</label>
+                        <input id="data" type="data"> 
+                    <label for="lesson">По какому курсу занимаетесь</label>
+                        <select id="lesson">
+                            <option>Scratch</option>
+                            <option>Python</option>
+                            <option>WEB</option>
+                            <option>C++</option>
+                            <option>Figma</option>
+                        </select>          
+            </fieldset>
+            <fieldset>
+                <legend>Обратная связь</legend>
+                    <label>Посоветуете ли Вы нас друзьям?</label>
+                        <input name="feedback" type="radio" id="checked1">
+                            <label class="radio" for="checked1">Да</label>
+                        <input name="feedback" type="radio" id="checked2">
+                            <label class="radio" for="checked2">Конечно</label>
+                        <input name="feedback" type="radio" id="checked3">
+                            <label class="radio" for="checked3">Разве могут быть другие варианты?</label>
+                            <!-- <input type="radio"> -->
+                            <!-- <input type="radio"> -->
+                            <!-- <input type="radio"> -->
+                    <label>Оставьте коментарий</label>
+                        <textarea name="" id="text"></textarea>        
+            </fieldset>
+                <label for="check1" class="box">Разрешить обработку данных</label>
+                    <input type="checkbox" name="" id="check1">
+                <label for="check2" class="box">Отправять новости на почту</label>
+                    <input type="checkbox" name="" id="check2">
+                <input type="submit" value="Отправить">
+    </form>
+
+    
+</body>
+</html>
